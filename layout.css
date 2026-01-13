@@ -1,0 +1,55 @@
+/* RESET & BASE */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #1a1a1a; overflow-x: hidden; }
+
+/* FLEXBOX: Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* FLEXBOX: About Page Columns */
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Mobile First */
+    gap: 40px;
+    padding: 60px 5%;
+    align-items: center;
+}
+
+/* CSS GRID: Services/Features */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile First */
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+/* BREAKPOINTS (Responsive Design) */
+@media (min-width: 768px) {
+    .flex-container { flex-direction: row; }
+    .about-text, .about-image { flex: 1; }
+    
+    .services-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+.plan-section { margin-bottom: 50px; }
+        .section-title { text-align: center; font-size: 20px; font-weight: bold; margin-bottom: 25px; }
+        .pricing-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .price-box { border: 1px solid #ccc; padding: 25px; width: 280px; text-align: center; border-radius: 8px; }
+        .price-box.featured { border: 2px solid blue; background: #f0f0f0; }
+        .cost { font-size: 28px; color: blue; font-weight: bold; margin: 15px 0; }
+        .description { font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5; }
+        .features { text-align: left; margin: 20px 0; font-size: 13px; }
+        .features li { margin: 8px 0; }
+        .select-btn { padding: 10px 20px; background: blue; color: white; border: none; cursor: pointer; border-radius: 5px; margin-top: 15px; }
+        .select-btn:hover { background: darkblue; }

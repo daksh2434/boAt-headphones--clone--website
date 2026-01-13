@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="layout.css">
+    <img style="width:300px;margin-left: 3%;" src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_black_24889e30-925c-4185-a028-9fef497a8e44.svg?v=1732879339">
+    <style>
+        .contact-info{
+            font-size:larger;
+            margin-left: 10%;
+            margin-right: 20%;
+        }
+        .styled-form{
+            margin-left: 10%;
+            margin-right: 20%;
+        }
+        .home-btn { position: absolute; top: 20px; right: 20px; }
+        .home-btn a { text-decoration: none; color: white; background: #2563eb; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="home-btn">
+        <a href="index.html">Home</a>
+    </div>
+    <main class="contact-container">
+    <div class="contact-info">
+        <h1>Connect with Us</h1>
+        <p>Email: support@boat-lifestyle.com</p>
+        <p>Phone: +91 22 4946 1882</p>
+    </div>
+    <hr>
+    <br><br>
+
+    <form class="styled-form">
+        <fieldset>
+        <legend>Complaint Form</legend>
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" required placeholder="John Doe">
+        </div>
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" required placeholder="john@example.com">
+            <span class="error-msg"></span>
+        </div>
+        <div>
+            <label>Phone Number:</label>
+            <input required placeholder="1234567890">
+        </div>
+        <div class="input-group">
+            <label>Select Product</label>
+            <select>
+                <option>Boat Rockerz 151</option>
+                <option>Boat Rockerz 650 Pro</option>
+                <option>Boat Rockerz 460 Naruto Edition</option>
+                <option>Boat Rockerz 411</option>
+                <option>Boat Rockerz 550</option>
+                <option>Boat Rockerz 512 ANC</option>
+                <option>Boat Rockerz 551 ANC Pro</option>
+                <option>Boat Immortal 300</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Select Subject</label>
+            <select>
+                <option>Technical Support</option>
+                <option>Order Tracking</option>
+                <option>Warranty Claim</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Message</label>
+            <textarea required rows="5"></textarea>
+        </div>
+        <button style="color:white;background-color:#2563eb;width: 350px; height: 35px; border-radius:10px;border-color:white;">Send Message</button>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>

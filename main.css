@@ -1,0 +1,97 @@
+/* Validation States */
+input:focus, textarea:focus {
+    border: 2px solid #2563eb;
+    outline: none;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid #ff4d4d;
+}
+
+input:valid {
+    border: 2px solid #00c853;
+}
+
+.price-box {
+    border: 2px solid transparent;
+}
+
+.price-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.price-box.featured {
+    border-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.best-value {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2563eb;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.price-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.cost {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.price-box ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.price-box li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.price-box li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00c853;
+    font-weight: bold;
+}
+
+.select-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.select-btn:hover {
+    background: #1d4ed8;
+}
+
+.featured-btn {
+    background: #2563eb;
+}
+
+.featured-btn:hover {
+    background: #1d4ed8;
+}

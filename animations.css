@@ -1,0 +1,13 @@
+/* Basic hover effect */
+
+.price-box:hover {
+    background-color: #f0f0f0;
+}
+
+.price-box.featured:hover {
+    background-color: #e8e8e8;
+}
+
+.feature-card:hover {
+    background-color: #f0f0f0;
+}
